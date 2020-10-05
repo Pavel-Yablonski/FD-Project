@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>benefits_04</title>
+    <desc>Created with Sketch.</desc>
+    <g id="benefits_04" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#323232" stroke-width="2" cx="29.5" cy="17.5" r="3.5"></circle>
+        <path d="M26.7092464,39.2173371 C28.4274481,40.9574934 30.6163279,42 33,42 C38.5228475,42 43,36.4035594 43,29.5 C43,22.5964406 38.5228475,17 33,17 C30.6919218,17 28.5664768,17.9774327 26.8741267,19.6192211" id="Path" stroke="#323232" stroke-width="2" stroke-linecap="round"></path>
+        <path d="M9,12.4954365 L34,12.4954365 L42,19.4954365 L42,25.4954365 L34,32.4954365 L9,32.4954365 C7.8954305,32.4954365 7,31.600006 7,30.4954365 L7,14.4954365 C7,13.390867 7.8954305,12.4954365 9,12.4954365 Z" id="Rectangle" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(24.500000, 22.495436) rotate(-45.000000) translate(-24.500000, -22.495436) "></path>
+        <path d="M40.9799166,30.5536655 C40.9799166,23.6501062 37.6640813,18.9788526 32.788707,18.9788526 C31.952699,18.9788526 30.9888225,19.4003217 30.2173796,19.6734429" id="Path" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path>
+    </g>
+</svg>

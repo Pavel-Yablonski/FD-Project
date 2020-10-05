@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Швейцарские часы</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="fonts/css/fontello.css">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 style="display: none;">Магазин</h1>
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-block">
+                <div class="header__menu-wrap">
+                    <nav class="header__menu">
+                        <div class="header__menu-logo">
+                            <a href="index.html" class="header__menu-logo_link">
+                                <img src="images/logo.png" alt="logo" class="header__menu-logo_img">
+                            </a>
+                        </div>
+
+                        <ul class="header__menu-list">
+                            <li class="header__menu-list_catalog">
+                                <a href="catalog-page.html" class="header__menu-list_catalog_link">Каталог</a>
+                                <ul class="header__submenu-list">
+                                    <li><a href="catalog-page.html">Мужские</a></li>
+                                    <li><a href="catalog-page.html">Женские</a></li>
+                                    <li><a href="catalog-page.html">Tissot</a></li>
+                                    <li><a href="catalog-page.html">Longines</a></li>
+                                    <li><a href="catalog-page.html">Calvin Klein</a></li>
+                                    <li><a href="catalog-page.html">Claude Bernard</a></li>
+                                    <li><a href="catalog-page.html">Swatch</a></li>
+                                    <li><a href="catalog-page.html">Tag Heuer</a></li>
+                                    <li><a href="catalog-page.html">Hamilton</a></li>
+                                    <li><a href="catalog-page.html">Victorinox</a></li>
+                                    <li><a href="catalog-page.html">Wenger</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="brands-page.html">Бренды</a></li>
+                            <li><a href="videoreview-page.html">Видеообзоры</a></li>
+                            <li><a href="contacts-page.html">Контакты</a></li>
+                        </ul>
+
+                        <button class="header__menu-search" onclick="openSearch();"></button>
+                    </nav>
+                </div>
+
+                <div class="header-tel-contact">
+                    <a href="tel:#" class="header-tel-contact__phone">
+                        <span class="header-tel-contact__phone-number">
+                            <span class="header-tel-contact__number-text">+375 XX XXX-XX-XX</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="header__search-block">
+                    <input type="text" placeholder="Поиск" class="header__search-input">
+                    <button class="search-close search-close__position" onclick="closeSearch();"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="slider">
+            <div class="slider-wrap slider__slide-1"></div>
+
+            <div class="slider-wrap slider__slide-2">
+                <div class="wrapper">
+                    <div class="slider__content aside-padding">
+                        <div class="slider__content_head">Longines Conquest Classic</div>
+                        <div class="slider__content_text">Воплощение женственности!</div>
+                        <button class="slider__content_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-wrap slider__slide-3">
+                <div class="wrapper">
+                    <div class="slider__content aside-padding">
+                        <div class="slider__content_head">Tissot PR100 Lady</div>
+                        <div class="slider__content_text"></div>
+                        <button class="slider__content_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-wrap slider__slide-4">
+                <div class="wrapper">
+                    <div class="slider__content aside-padding">
+                        <div class="slider__content_head">Новые Seastar!</div>
+                        <div class="slider__content_text">Яркий дух, неповторимые очертания!</div>
+                        <button class="slider__content_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-wrap slider__slide-5">
+                <div class="wrapper">
+                    <div class="slider__content aside-padding">
+                        <div class="slider__content_head">В бутике Tissot - приятные бонусы!</div>
+                        <div class="slider__content_text">Жмите!</div>
+                        <button class="slider__content_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-wrap slider__slide-6">
+                <div class="wrapper">
+                    <div class="slider__content aside-padding">
+                        <div class="slider__content_head">Tag Heuer</div>
+                        <div class="slider__content_text">Aquaracer Lady</div>
+                        <button class="slider__content_btn">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wrapper">
+            <div class="main-content">
+
+                <div class="info">
+                    <div class="info__items">
+                        <div class="info__item">
+                            <div class="info__item_text">
+                                <span>Бесплатная доставка <br>
+                                      по Беларуси
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info__item info__item2">
+                            <div class="info__item_text">
+                                <span>Рассрочка под 0%</span>
+                            </div>
+                        </div>
+                        <div class="info__item info__item3">
+                            <div class="info__item_text">
+                                <span>До трёх моделей <br>
+                                      на выбор
+                                </span>
+                            </div>
+                        </div>
+                        <div class="info__item info__item4">
+                            <div class="info__item_text">
+                                <span>Скидки постоянным <br>
+                                      клиентам
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="man-woman">
+                    <div class="man-woman__item">
+                        <a href="catalog-page.html" class="man-woman__link">
+                            <img src="images/man.png" alt="man">
+                            <div class="man-woman__link-text">
+                                <div class="man-woman__link-text_header">Для него</div>
+                                <div class="man-woman__link-text_continue">Мужские часы &rang;</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="man-woman__item">
+                        <a href="catalog-page.html" class="man-woman__link">
+                            <img src="images/woman.png" alt="woman">
+                            <div class="man-woman__link-text">
+                                <div class="man-woman__link-text_header">Для неё</div>
+                                <div class="man-woman__link-text_continue">Женские часы &rang;</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <section class="sales-hits">
+                    <h2>Хиты продаж</h2>
+
+                    <div class="sales-hits__block">
+                        <div class="sales-hits__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Tissot.png" alt="Tissot-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Tissot</div>
+                                        <div class="product__subname">Gent XI Swissmatic</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            1 562,00
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-top">Top</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-hits__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/swatch.png" alt="Swatch-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Swatch</div>
+                                        <div class="product__subname">Ultraciel</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            146,00
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-top">Top</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sales-hits__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Tissot2.png" alt="Tissot-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Tissot</div>
+                                        <div class="product__subname">Le Locle Automatic</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            2 513,00
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-top">Top</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sales-hits__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Tissot3.png" alt="Tissot-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Tissot</div>
+                                        <div class="product__subname">Seastar 1000 Powermatic 80</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            2 460,00
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-top">Top</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="sales-spec">
+                    <h2>Спецпредложения</h2>
+
+                    <div class="sales-spec__block">
+                        <div class="sales-spec__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Tissot-spec.png" alt="Tissot-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Tissot</div>
+                                        <div class="product__subname">Lady Quartz</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            1 005,20
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                        <div class="product__old-cost">1 436,00 руб</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-num">-30%</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-spec__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Tissot-spec2.png" alt="Tissot-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Tissot</div>
+                                        <div class="product__subname">Tradition Automatic Small Second</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            1 804,50
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                        <div class="product__old-cost">2 406,00 руб</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-num">-25%</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sales-spec__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Claud-Bernard.png" alt="Claud-Bernard-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Claude Bernard</div>
+                                        <div class="product__subname">Slim Line Automatic</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            890,40
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                        <div class="product__old-cost">1 272,00 руб</div>
+                                    </div>
+
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-num">-30%</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sales-spec__product">
+                            <div class="product">
+                                <div class="product__info">
+
+                                    <div class="product__img-block">
+                                        <img src="images/Calvin-Klein.png" alt="Calvin-Klein-img">
+                                    </div>
+
+                                    <div class="product__name">
+                                        <div class="product__head-name">Calvin Klein</div>
+                                        <div class="product__subname">Aggregate</div>
+                                    </div>
+
+                                    <div class="product__sales-info">
+                                        <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                        <div class="product__sales-avaible-wrapper">
+                                            <div class="product__sales-avaible">Часы в наличии</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="product__cost-block">
+                                        <div class="product__cost">
+                                            515,14
+                                            <span class="product__cost-rub">руб.</span>
+                                        </div>
+                                        <div class="product__old-cost">859,00 руб</div>
+                                    </div>
+                                </div>
+
+                                <div class="product__flag">
+                                    <div class="product__flag-num">-40%</div>
+                                </div>
+
+                                <div class="product__hover-block">
+                                    <button class="product__hover-basket">В корзину</button>
+                                    <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="news">
+                    <h2>Новости</h2>
+
+                    <div class="news__list">
+                        <div class="news__item-column">
+                            <div class="aside-padding">
+                                <div class="news__item">
+                                    <div class="news__img">
+                                        <img src="images/news1.jpg" alt="news">
+                                    </div>
+                                    <div class="news__text-block">
+                                        <div class="news__text-block_head">
+                                            The Longines Heritage Military Marine Nationale: Longines поднимает паруса
+                                        </div>
+                                        <div class="news__text-block_discription">
+                                            <p>
+                                                В середине 20-го века часы Longines 5774 с гордостью служили экипажу французского флота. 
+                                                Для возрождения данной модели Longines взяли за основу свою богатую историю и предыдущий опыт.
+
+                                                Несмотря на теплые оттенки и приглушенный цвет циферблата, Longines Heritage Military Marine Nationale 
+                                                обладает выразительным дизайном, как и оригинальная версия благодаря массивным секундным стрелкам.
+                                            </p>
+
+                                            <div class="news__date">30 августа 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__item-column">
+                            <div class="aside-padding">
+                                <div class="news__item">
+                                    <div class="news__img">
+                                        <img src="images/news2.jpg" alt="news">
+                                    </div>
+                                    <div class="news__text-block">
+                                        <div class="news__text-block_head">
+                                            Swatch X BAPE 2020
+                                        </div>
+                                        <div class="news__text-block_discription">
+                                            <p>
+                                                Swatch and BAPE еще раз торжественно представляют коллаборацию корпуса BIG BOLD и незабываемого стрит-стайла.
+
+                                                Swatch X BAPE 2020 посвящается людям, которые ежедневно и ежесекундно расширяют свои горизонты. 
+                                                В этом году отметьте все преодоленные препятствия, все предпринятые шаги и все маленькие и большие победы. 
+                                            </p>
+
+                                            <div class="news__date">19 августа 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="news__item-column">
+                            <div class="aside-padding">
+                                <div class="news__item">
+                                    <div class="news__img">
+                                        <img src="images/news3.jpg" alt="news">
+                                    </div>
+                                    <div class="news__text-block">
+                                        <div class="news__text-block_head">
+                                            Лучшие инженерные разработки для пилотов. Khaki Aviation Converter
+                                        </div>
+                                        <div class="news__text-block_discription">
+                                            <p>
+                                                РАСЧЕТ ОСНОВНЫХ ПОКАЗАТЕЛЕЙ ПОЛЕТА С ИСПОЛЬЗОВАНИЕМ ЛОГАРИФМИЧЕСКОЙ ЛИНЕЙКИ
+
+                                                Коллекцию авиаторских часов Hamilton пополнили новые модели, значительно упрощающие расчеты. 
+
+                                                Любой профессиональный пилот подтвердит, что ничто не сравнится с ощущениями, которые испытываешь 
+                                                во время полета, когда на высоте 3000 метров самолет врезается в облака и, словно погружаясь в океан света, 
+                                                взмывает в небеса. Но за всем этим стоят точные расчеты, которые любой пилот должен быть в состоянии выполнить 
+                                                как с использованием приборов самолета, так и без.
+                                            </p>
+
+                                            <div class="news__date">16 августа 2020</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="video-review">
+                    <h2>Видеообзоры</h2>
+
+                    <div class="video-review__list">
+                        <div class="video-review__item">
+                            <div class="aside-padding">
+                                <div class="video">
+                                    <iframe width="560" height="380" src="https://www.youtube.com/embed/0xkueqj56Us?rel=0" allow="accelerometer; 
+                                    autoplay; allowfullscreen encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="main__bottom-video-item"></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="video-review__item">
+                            <div class="aside-padding">
+                                <div class="video">
+                                    <iframe width="560" height="380" src="https://www.youtube.com/embed/uml2LNgGGPA" allow="accelerometer; 
+                                    autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content aside-padding">
+                    <h2 style="display: none;">Бренды</h2>
+                    <div class="main-brands">
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand1-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand1-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Longines</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand2-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand2-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Tissot</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand3-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand3-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Claud Bernard</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand4-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand4-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы TAG Heuer</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand5-mono.svg" alt="brand" height="80">
+                                <span>Часы Hamilton</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand6-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand6-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Victorinox</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand7-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand7-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Calvin Klein</span>
+                            </a>
+                        </div>
+                        <div class="main-brands__item">
+                            <a href="#" class="main-brands__link">
+                                <img src="images/brand8-color.svg" alt="brand" class="main-brands__img_color">
+                                <img src="images/brand8-mono.svg" alt="brand" class="main-brands__img_mono">
+                                <span>Часы Wenger</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="content aside-padding">
+                    <h2>Швейцарские часы</h2>
+                    <p class="text-pharagraph">
+                        Нет ничего более ценного, чем время. Оформите этот ускользающий ресурс в идеальную оболочку – купите 
+                        оригинальные часы знаменитых европейских брендов. Такой аксессуар поможет вам заявить о себе и подчеркнет статус.
+                    </p>
+                    <p class="text-pharagraph">
+                        По выбору наручных украшений мы многое можем рассказать о вас. Например, утонченные и романтичные натуры выбирают изящные 
+                        формы и тонкие линии. Серьезные и представительные мужчины предпочитают классику и строгость форм. Спортивные модели – для 
+                        самых активных личностей. Переходите в каталог Swisstime. Знакомьтесь с аксессуарами, которые уже заслужили доверие 
+                        миллионов – Tissot, Longines, Tag Heuer, Hamilton, Victorinox, Swatch, Calvin Klein, Claude Bernard, Flik Flak. Уверены, 
+                        вы найдете модель, которая придется по душе.
+                    </p>
+                    <span class="show-all-link" onclick="openText();">Читать полностью</span>
+                    <div class="show-all-text">
+                        <p class="text-pharagraph">
+                            Наш магазин — официальный импортер швейцарских часов в Республику Беларусь. Мы осуществляем продажу через розничные 
+                            магазины и интернет-каталог. Предлагаем только оригиналы швейцарских аксессуаров. Оформляем гарантию от производителя. 
+                            Для удобства покупателей: бесплатная доставка по Минску и регионам. Оформите нашу дисконтную карту онлайн или в нашем магазине, 
+                            и используйте дополнительные бонусы компании. К вашим услугам работа авторизированного сервисного центра и гарантийное обслуживание.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="modal-window">
+                    <div class="modal-shadow">
+                        <a href="javascript:closeModalWindow();"></a>
+                    </div>
+                    <div class="modal">
+                        <button class="modal-close" onclick="closeModalWindow();"></button>
+                        <div class="modal__text-head">Заказ в 1 клик</div>
+                        <div class="modal__text">После заказа Вам перезвонит менеджер</div>
+                        <form class="modal__form">
+
+                            <div class="modal__form_input-block">
+                                <label for="modal-username" class="modal__form_label">Ваше имя *</label>
+                                <input type="text" id="modal-username" class="modal__form_input" required="">
+                            </div>
+
+                            <div class="modal__form_input-block">
+                                <label for="modal-tel" class="modal__form_label">Телефон *</label>
+                                <input type="tel" id="modal-tel" class="modal__form_input" required="">
+                            </div>
+
+                            <button class="modal__button">Отправить</button>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <form class="subscription">
+                <label for="input-subscription" class="subscription__label">Подпишитесь на наши новости</label>
+                <div class="input-area aside-padding">
+                    <div class="input-area__wrapper">
+                        <input type="email" name="email" placeholder="введите Ваш e-mail адрес" id="input-subscription" class="input-subscription" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input type="submit" value="Подписаться" class="sub-submit">
+                    </div>
+                </div>
+            </form>
+
+            <div class="footer__top-block">
+                <div class="paymant-methods aside-padding">
+                    <img src="images/paymant1.png" alt="paymant">
+                    <img src="images/paymant2.png" alt="paymant">
+                    <img src="images/paymant3.png" alt="paymant">
+                    <img src="images/paymant4.png" alt="paymant">
+                    <img src="images/paymant5.png" alt="paymant">
+                    <img src="images/paymant6.png" alt="paymant">
+                    <img src="images/paymant7.png" alt="paymant">
+                    <img src="images/paymant8.png" alt="paymant">
+                </div>
+            </div>
+
+            <div class="footer__bottom-block">
+                <div class="footer__info aside-padding">
+                    <div class="copy">&copy; 2020 Швейцарские часы. Все права защищены.</div>
+                    <div class="social">
+                        <div class="social__link">
+                            <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://vk.com/" target="_blank"><span class="icon-vkontakte"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://twitter.com/" target="_blank"><span class="icon-twitter"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.pinterest.com/" target="_blank"><span class="icon-pinterest"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon-linkedin"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                autoplay: 100000,
+                dots: true,
+                slidesToShow: 1,
+                speed: 1000,
+            });
+        }); 
+      
+    </script>
+</body>
+</html>

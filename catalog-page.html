@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог часов</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/jquery-ui.css">
+    <link rel="stylesheet" href="fonts/css/fontello.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            <div class="header-block">
+                <div class="header__menu-wrap">
+                    <nav class="header__menu">
+                        <div class="header__menu-logo">
+                            <a href="index.html" class="header__menu-logo_link">
+                                <img src="images/logo.png" alt="logo" class="header__menu-logo_img">
+                            </a>
+                        </div>
+
+                        <ul class="header__menu-list">
+                            <li class="header__menu-list_catalog">
+                                <a href="catalog-page.html" class="header__menu-list_catalog_link">Каталог</a>
+                                <ul class="header__submenu-list">
+                                    <li><a href="catalog-page.html">Мужские</a></li>
+                                    <li><a href="catalog-page.html">Женские</a></li>
+                                    <li><a href="catalog-page.html">Tissot</a></li>
+                                    <li><a href="catalog-page.html">Longines</a></li>
+                                    <li><a href="catalog-page.html">Calvin Klein</a></li>
+                                    <li><a href="catalog-page.html">Claude Bernard</a></li>
+                                    <li><a href="catalog-page.html">Swatch</a></li>
+                                    <li><a href="catalog-page.html">Tag Heuer</a></li>
+                                    <li><a href="catalog-page.html">Hamilton</a></li>
+                                    <li><a href="catalog-page.html">Victorinox</a></li>
+                                    <li><a href="catalog-page.html">Wenger</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="brands-page.html">Бренды</a></li>
+                            <li><a href="videoreview-page.html">Видеообзоры</a></li>
+                            <li><a href="contacts-page.html">Контакты</a></li>
+                        </ul>
+
+                        <button class="header__menu-search" onclick="openSearch();"></button>
+                    </nav>
+                </div>
+
+                <div class="header-tel-contact">
+                    <a href="tel:#" class="header-tel-contact__phone">
+                        <span class="header-tel-contact__phone-number">
+                            <span class="header-tel-contact__number-text">+375 XX XXX-XX-XX</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="header__search-block">
+                    <input type="text" placeholder="Поиск" class="header__search-input">
+                    <button class="search-close search-close__position" onclick="closeSearch();"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="wrapper">
+
+            <div class="breadcrumbs-block">
+                <ul class="breadcrumbs aside-padding">
+                    <li>
+                        <a href="index.html" class="breadcrumbs__first-link">Главная</a>
+                    </li>
+                    <li>
+                        <a href="catalog-page.html">Каталог часов</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="catalog-block">
+                <h1>Каталог часов</h1>
+
+                <div class="catalog-main-content">
+
+                    <div class="catalog-content aside-padding">
+
+                        <div class="catalog-content__block">
+                            <div class="catalog-content__head">Диапазон цен</div>
+
+                            <div class="catalog-content__filter">
+                                
+                                <div class="catalog-content__filter-range">
+                                    <input type="text" class="catalog-content__filter-range-left"/>
+                                    <input type="text" class="catalog-content__filter-range-right"/>
+                                    <div class="filter-range-cost"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="catalog-content__block">
+                            <div class="catalog-content__head">Наличие в магазинах</div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="shop-1" class="catalog-content__item_checkbox">
+                                <label for="shop-1">TЦ "Dana Mall"</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="shop-2" class="catalog-content__item_checkbox">
+                                <label for="shop-2">TЦ "Галерея Минск"</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="shop-3" class="catalog-content__item_checkbox">
+                                <label for="shop-3">TЦ "Замок"</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="shop-4" class="catalog-content__item_checkbox">
+                                <label for="shop-4">Бутик Tissot</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="shop-5" class="catalog-content__item_checkbox">
+                                <label for="shop-5">Бутик TimeCity</label>
+                            </div>
+                        </div>
+
+                        <div class="catalog-content__block">
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="special" class="catalog-content__item_checkbox">
+                                <label for="special" class="special__chekbox">
+                                    <span>Спецпредложение</span> 
+                                    <span>SALE</span>
+                                </label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="newest" class="catalog-content__item_checkbox">
+                                <label for="newest">Новинки</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="order" class="catalog-content__item_checkbox">
+                                <label for="order">Под заказ</label>
+                            </div>
+
+                        </div>
+
+                        <div class="catalog-content__block">
+                            <div class="catalog-content__head">Бренд</div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-1" class="catalog-content__item_checkbox">
+                                <label for="brand-1">Tag Heuer</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-2" class="catalog-content__item_checkbox">
+                                <label for="brand-2">Longines</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-3" class="catalog-content__item_checkbox">
+                                <label for="brand-3">Tissot</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-4" class="catalog-content__item_checkbox">
+                                <label for="brand-4">Claude Bernard</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-5" class="catalog-content__item_checkbox">
+                                <label for="brand-5">Swatch</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-6" class="catalog-content__item_checkbox">
+                                <label for="brand-6">Hamilton</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-7" class="catalog-content__item_checkbox">
+                                <label for="brand-7">Victorinox</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-8" class="catalog-content__item_checkbox">
+                                <label for="brand-8">Calvin Klein</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="brand-9" class="catalog-content__item_checkbox">
+                                <label for="brand-9">Wenger</label>
+                            </div>
+
+                        </div>
+
+                        <div class="catalog-content__block">
+                            <div class="catalog-content__head">Тип часов</div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="gender-1" class="catalog-content__item_checkbox">
+                                <label for="gender-1">Женские</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="gender-2" class="catalog-content__item_checkbox">
+                                <label for="gender-2">Мужские</label>
+                            </div>
+
+                        </div>
+
+                        <div class="catalog-content__block">
+
+                            <div class="catalog-content__head">Механизм</div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="type-1" class="catalog-content__item_checkbox">
+                                <label for="type-1">Кварцевый</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="type-2" class="catalog-content__item_checkbox">
+                                <label for="type-2">Механический</label>
+                            </div>
+
+                        </div>
+
+                        <div class="catalog-content__block">
+                            <div class="catalog-content__head">Стекло</div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="glass-1" class="catalog-content__item_checkbox">
+                                <label for="glass-1">Минеральное</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="glass-2" class="catalog-content__item_checkbox">
+                                <label for="glass-2">Минеральное с сапфировым напылением</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="glass-3" class="catalog-content__item_checkbox">
+                                <label for="glass-3">Органическое</label>
+                            </div>
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="glass-4" class="catalog-content__item_checkbox">
+                                <label for="glass-4">Сапфировое</label>
+                            </div>
+
+                        </div>
+                
+                        <div class="catalog-content__block">
+
+                            <div class="catalog-content__item">
+                                <input type="checkbox" id="jewelry" class="catalog-content__item_checkbox">
+                                <label for="jewelry">Ювелирные часы</label>
+                            </div>
+
+                        </div>
+
+                        <button type="reset" class="catalog-content__reset">Сбросить фильтр</button>
+                    </div>
+
+                    <div class="catalog-sales">
+
+                        <div class="aside-padding">
+                            <div class="pagination">
+                                <ul class="pagination__page-list">
+                                    <li class="pagination__page-list_active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+        
+                                <div class="pagination__next-page-wrapper">
+                                    <a href="#" class="pagination__next-page">Вперед</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-sales__watches">
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">Gent XI Swissmatic</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                1 562,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/swatch.png" alt="Swatch-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Swatch</div>
+                                            <div class="product__subname">Ultraciel</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                146,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot2.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">Le Locle Automatic</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                2 513,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot3.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">Seastar 1000 Powermatic 80</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                2 460,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Longines.png" alt="Longines-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Longines</div>
+                                            <div class="product__subname">The  Master Collection</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                6 951,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot4.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">T-Race</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                2 029,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Longines1.png" alt="Longines-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Longines</div>
+                                            <div class="product__subname">Hydroconquest</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                7 014,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot5.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">Pr 100 Sport Chic Chronograph</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                2 190,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Tissot6.png" alt="Tissot-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Tissot</div>
+                                            <div class="product__subname">Luxury Powermatic 80</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                2 424,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Longines2.png" alt="Longines-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Longines</div>
+                                            <div class="product__subname">The  Elegant Collection</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                7 469,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/swatch1.png" alt="Swatch-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Swatch</div>
+                                            <div class="product__subname">Joe's Smile</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                435,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="catalog-sales__product">
+                                <div class="product">
+                                    <div class="product__info">
+    
+                                        <div class="product__img-block">
+                                            <img src="images/Wenger.png" alt="Wenger-img">
+                                        </div>
+    
+                                        <div class="product__name">
+                                            <div class="product__head-name">Wenger</div>
+                                            <div class="product__subname">Attitude Chrono</div>
+                                        </div>
+    
+                                        <div class="product__sales-info">
+                                            <div class="product__sales-code">Артикул: XXXXXXXXXX</div>
+                                            <div class="product__sales-avaible-wrapper">
+                                                <div class="product__sales-avaible">Часы в наличии</div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="product__cost-block">
+                                            <div class="product__cost">
+                                                833,00
+                                                <span class="product__cost-rub">руб.</span>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="product__flag">
+                                        <div class="product__flag-top">Top</div>
+                                    </div>
+    
+                                    <div class="product__hover-block">
+                                        <button class="product__hover-basket">В корзину</button>
+                                        <button class="product__hover-1clik" onclick="openModalWindow();">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="aside-padding">
+                            <div class="pagination">
+                                <ul class="pagination__page-list">
+                                    <li class="pagination__page-list_active"><span>1</span></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                </ul>
+        
+                                <div class="pagination__next-page-wrapper">
+                                    <a href="#" class="pagination__next-page">Вперед</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="catalog-text-block aside-padding">
+                            <p class="text__paragraph_big">
+                                В каталоге магазина представлен широкий ассортимент оригинальных швейцарских часов различных брендов. Также у нас можно 
+                                купить швейцарские ножи бренда Victorinox. Вы сможете подобрать аксессуар на свой вкус или выбрать подарок близким.
+                            </p>
+                            <p class="text-pharagraph">
+                                Швейцарские часы в интернет-магазине представлены следующими брендами: Tag Heuer, Longines, Tissot, Claude Bernard, 
+                                Swatch, Calvin Klein, Victorinox. Такой ассортимент позволяет подобрать часы под любой стиль жизни и характер. Они помогут 
+                                выразить вашу индивидуальность без слов. А вы можете быть уверены в их безукоризненном исполнении и безотказной работе.
+                            </p>
+                            <span class="show-all-link" onclick="openText();">Читать полностью</span>
+                            <div class="show-all-text">
+                                <p class="text-pharagraph">
+                                    Купить швейцарские часы и ножи в Минске можно как с бесплатной доставкой, так и в розничных магазинах сети нашего магазина. 
+                                    На все часы и ножи предоставляется международная гарантия, а также вы можете воспользоваться услугами авторизированного сервисного центра.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-window">
+                <div class="modal-shadow">
+                    <a href="javascript:closeModalWindow();"></a>
+                </div>
+                <div class="modal">
+                    <button class="modal-close" onclick="closeModalWindow();"></button>
+                    <div class="modal__text-head">Заказ в 1 клик</div>
+                    <div class="modal__text">После заказа Вам перезвонит менеджер</div>
+                    <form class="modal__form">
+
+                        <div class="modal__form_input-block">
+                            <label for="modal-username" class="modal__form_label">Ваше имя *</label>
+                            <input type="text" id="modal-username" class="modal__form_input" required="">
+                        </div>
+
+                        <div class="modal__form_input-block">
+                            <label for="modal-tel" class="modal__form_label">Телефон *</label>
+                            <input type="tel" id="modal-tel" class="modal__form_input" required="">
+                        </div>
+
+                        <button class="modal__button">Отправить</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <form class="subscription">
+                <label for="input-subscription" class="subscription__label">Подпишитесь на наши новости</label>
+                <div class="input-area aside-padding">
+                    <div class="input-area__wrapper">
+                        <input type="email" name="email" placeholder="введите Ваш e-mail адрес" id="input-subscription" class="input-subscription" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input type="submit" value="Подписаться" class="sub-submit">
+                    </div>
+                </div>
+            </form>
+
+            <div class="footer__top-block">
+                <div class="paymant-methods aside-padding">
+                    <img src="images/paymant1.png" alt="paymant">
+                    <img src="images/paymant2.png" alt="paymant">
+                    <img src="images/paymant3.png" alt="paymant">
+                    <img src="images/paymant4.png" alt="paymant">
+                    <img src="images/paymant5.png" alt="paymant">
+                    <img src="images/paymant6.png" alt="paymant">
+                    <img src="images/paymant7.png" alt="paymant">
+                    <img src="images/paymant8.png" alt="paymant">
+                </div>
+            </div>
+
+            <div class="footer__bottom-block">
+                <div class="footer__info aside-padding">
+                    <div class="copy">&copy; 2020 Швейцарские часы. Все права защищены.</div>
+                    <div class="social">
+                        <div class="social__link">
+                            <a href="https://www.facebook.com/" target="_blank"><span class="icon-facebook"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://vk.com/" target="_blank"><span class="icon-vkontakte"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://twitter.com/" target="_blank"><span class="icon-twitter"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.pinterest.com/" target="_blank"><span class="icon-pinterest"></span></a>
+                        </div>
+                        <div class="social__link">
+                            <a href="https://www.linkedin.com/" target="_blank"><span class="icon-linkedin"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/cost-filter.js"></script>
+    <script>
+        $('button').click(function() {
+            $('input:checked').prop('checked', false);
+        });
+    </script>
+</body>
+</html>

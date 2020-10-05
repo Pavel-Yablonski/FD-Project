@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>benefits_01</title>
+    <desc>Created with Sketch.</desc>
+    <g id="benefits_01" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M18,23.5 C18,20.3703864 15.5375661,17.8333333 12.5,17.8333333 C9.89235953,17.8333333 7.70856855,19.7030401 7.14263504,22.2122636 C7.04853519,21.4881587 7,20.7497474 7,20 C7,10.6111593 14.6111593,5 24,5 C33.3888407,5 41,10.6111593 41,20 C41,20.7497474 40.9514648,21.4881587 40.857365,22.2122636 C40.2914315,19.7030401 38.1076405,17.8333333 35.5,17.8333333 C32.4624339,17.8333333 30,20.3703864 30,23.5 M30,23.5 C30,20.3703864 27.3137085,17.8333333 24,17.8333333 C20.6862915,17.8333333 18,20.3703864 18,23.5" id="Shape" stroke="#323232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M7.1,21.5 C7.1,25.2530997 19.1342226,35.9704642 24,36 C28.8657774,36.0295358 40.9,26.5237378 40.9,21.7051696" id="Path-9" stroke="#323232" stroke-width="2"></path>
+        <path d="M18,23.5 C18,27.4161703 21,34 24,34 C27,34 30,26.412187 30,23.5" id="Path-10" stroke="#323232" stroke-width="2"></path>
+        <path d="M30,22 C30,12.6111593 27.3137085,5 24,5 C20.6862915,5 18,12.6111593 18,22" id="Oval" stroke="#323232" stroke-width="2"></path>
+        <circle id="Oval" fill="#FFFFFF" cx="19" cy="13" r="2"></circle>
+        <rect id="Rectangle" stroke="#FFFFFF" stroke-width="6" fill="#FFFFFF" x="18" y="31" width="12" height="12" rx="3"></rect>
+        <rect id="Rectangle" stroke="#323232" stroke-width="2" fill="#FFFFFF" x="18" y="31" width="12" height="12" rx="3"></rect>
+    </g>
+</svg>
