@@ -1079,6 +1079,10 @@ h1, h2 {
     display: flex;
 }
 
+.contacts-content h2 {
+    text-align: left;
+}
+
 .contacts-content__info {
     width: 58.3333333333%;
 }
