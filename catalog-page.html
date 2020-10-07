@@ -11,12 +11,14 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
     <header class="header">
         <div class="wrapper">
-            <div class="header-block">
+            <div class="header-block aside-padding">
                 <div class="header__menu-wrap">
                     <nav class="header__menu">
+                        <div class="header__menu-burger_wrapper" onclick="burgerMenu();">
+                            <div class="header__menu-burger"></div>
+                        </div>
                         <div class="header__menu-logo">
                             <a href="index.html" class="header__menu-logo_link">
                                 <img src="images/logo.png" alt="logo" class="header__menu-logo_img">
@@ -80,13 +82,24 @@
             </div>
 
             <div class="catalog-block">
-                <h1>Каталог часов</h1>
+                <h1 class="h1">Каталог часов</h1>
 
                 <div class="catalog-main-content">
+                        <div class="adaptive-filter">
+                            <div class="adaptive-filter__text" onclick="adaptiveFilter();">Фильтр</div>
+                        </div>
+
 
                     <div class="catalog-content aside-padding">
 
+                        <div class="adaptive-filter__content">
+                            <div class="adaptive-filter__content_head">Фильтры
+                                <button class="search-close search-close__position" onclick="submitCloseAdaptive();"></button>
+                            </div>
+                        </div>
+
                         <div class="catalog-content__block">
+
                             <div class="catalog-content__head">Диапазон цен</div>
 
                             <div class="catalog-content__filter">
@@ -265,8 +278,10 @@
                             </div>
 
                         </div>
-
-                        <button type="reset" class="catalog-content__reset">Сбросить фильтр</button>
+                        <div class="catalog-content__buttons">
+                            <button type="reset" class="catalog-content__reset" onclick="submitCloseAdaptive();">Применить</button>
+                            <button type="submit" class="catalog-content__submit">Сбросить фильтр</button>
+                        </div>
                     </div>
 
                     <div class="catalog-sales">
