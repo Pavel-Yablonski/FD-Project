@@ -43,6 +43,10 @@ a {
     background-color: #fff;
 }
 
+.header.header__position_static {
+    position: static;
+}
+
 .wrapper {
     max-width: 1386px;
     min-width: 320px;
@@ -1917,6 +1921,10 @@ h1, h2 {
         width: 90%;
     }
 
+    .video-review-block__item-column {
+        width: 100%;
+    }
+
     .contacts-content {
         flex-direction: column;
     }
@@ -1927,6 +1935,10 @@ h1, h2 {
 
     .pagination__next-page-wrapper {
         margin-left: -30px;
+    }
+
+    .copy {
+        text-align: center;
     }
 }
 

@@ -27,6 +27,7 @@ function closeSearch() {
 function burgerMenu() {
     document.querySelector(".header__menu-burger").classList.toggle("header__menu-burger-active");
     document.querySelector(".header__menu-list").classList.toggle("header__menu-list_show");
+    document.querySelector(".header").classList.toggle("header__position_static");
     document.querySelector(".main").classList.toggle("main__show");
     document.querySelector(".footer").classList.toggle("footer__show");
 }
