@@ -1193,7 +1193,7 @@ h1, h2 {
 }
 
 .contacts-content__feedback {
-    width: 520px;
+    max-width: 520px;
 }
 
 .contacts-content__feedback-form-item {
@@ -1209,7 +1209,7 @@ h1, h2 {
 }
 
 .contacts-content__feedback-form_input, .contacts-content__feedback-form_textarea {
-    width: 100vw;
+    width: 100%;
     padding: 12px 24px;
     border: 1px solid rgba(127,127,127,0.2);
     box-sizing: border-box;
