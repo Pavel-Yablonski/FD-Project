@@ -1470,7 +1470,7 @@ h1, h2 {
 }
 
 .catalog-sales__product {
-    width: 320px;
+    width: 33%;
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 50px;
@@ -1723,10 +1723,6 @@ h1, h2 {
 
     .catalog-sales {
         width: 100%;
-    }
-
-    .catalog-sales__product {
-        width: 310px;
     }
 
     .catalog-content__filter {
