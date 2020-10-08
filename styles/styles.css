@@ -17,6 +17,8 @@ summary, time, mark, audio, video, input {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     outline: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
 }
 
 body {
