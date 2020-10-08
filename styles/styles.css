@@ -1159,7 +1159,7 @@ h1, h2 {
 }
 
 .contacts-content__info {
-    width: 58.3333333333%;
+    width: 60%;
 }
 
 .contacts-content__info h2, .contacts-content__feedback h2 {
@@ -1196,8 +1196,8 @@ h1, h2 {
     font-weight: bold;
 }
 
-.contacts-content__feedback-form {
-    max-width: 520px;
+.contacts-content__feedback {
+    width: 40%;
 }
 
 .contacts-content__feedback-form-item {
@@ -1816,7 +1816,7 @@ h1, h2 {
     }
 
     .slider__content_head {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .slider__content_text {
@@ -1930,6 +1930,10 @@ h1, h2 {
     }
 
     .contacts-content__info {
+        width: 100%;
+    }
+
+    .contacts-content__feedback {
         width: 100%;
     }
 
