@@ -16,10 +16,7 @@ summary, time, mark, audio, video, input {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-*:active, *:focus {
-    background: none;
+    outline: none;
 }
 
 body {
