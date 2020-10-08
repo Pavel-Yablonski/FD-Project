@@ -18,6 +18,10 @@ summary, time, mark, audio, video, input {
     box-sizing: border-box;
 }
 
+*:active, *:focus {
+    background: none;
+}
+
 body {
     display: flex;
 	flex-direction: column;
