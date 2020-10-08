@@ -249,11 +249,9 @@ a {
 
 .header__search-block {
     width: 100%;
-    display: flex;
     position: relative;
     border-top: 1px solid rgba(50,50,50,0.1);
     display: none;
-    order: 5;
 }
 
 .header__search-input {
@@ -267,7 +265,7 @@ a {
 }
 
 .header__search-block__open {
-    display: block;
+    display: flex;
 }
 
 .header-tel-contact {
